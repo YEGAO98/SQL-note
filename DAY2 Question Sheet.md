@@ -131,3 +131,7 @@ FROM vendors
 GROUP BY vendor_state
 ORDER BY number_vendors DESC
 LIMIT 5;
+
+# NOTE 
+Modify your query so that only years with an average budget of greater than $60 million are included.
+[^1]: SELECT is processed after HAVING
