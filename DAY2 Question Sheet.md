@@ -134,4 +134,5 @@ LIMIT 5;
 
 # NOTE 
 Modify your query so that only years with an average budget of greater than $60 million are included.
-[^1]: SELECT is processed after HAVING
+1. SELECT is processed after HAVING
+2. ORDER BY is after SELECT so is okay to use the defined column in SELECT
