@@ -3,7 +3,7 @@ study note and question note
 ## Q1
 1. **having** can be used in aggregation and function such as **SUM(),AVG()
 2. **WHERE** cannot be used in aggregation
-## -[] Q2
+## - [] Q2
 From the bike_trips table, return the hour from the Start_Time and End_Time, and convert the hour to the NUMERIC data type.
 -- bike_trips
 |   Trip_ID  |   Start_Time           |   End_Time            |
@@ -47,7 +47,7 @@ INTERSECT
 SELECT *
 FROM movie_2010;
 
-##-[] Q4
+## - [] Q4
 Add the rows from the movie_2010 table to movie_2000 but remove the duplicates.
 
 -- movie_2000
@@ -66,7 +66,7 @@ Add the rows from the movie_2010 table to movie_2000 but remove the duplicates.
 |   2016  |   Captain America: Civil War       |   250000000    |
 
 **ANSWER:**
-SELECT * /n
+SELECT * 
 FROM movie_2000
 UNION 
 SELECT *
