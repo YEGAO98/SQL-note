@@ -14,7 +14,7 @@ TIPS:
 2、应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描。
 3、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫
 
-##RIGHT JOIN
+## RIGHT JOIN
 SELECT cities.name AS city, urbanarea_pop, countries.name AS country,
        indep_year, languages.name AS language, percent
 FROM languages
@@ -23,3 +23,15 @@ FROM languages
   RIGHT JOIN cities
     ON **countries.code = cities.country_code** 这里接上表的code
 ORDER BY city, language;
+
+## UNION
+UNION 操作符用于合并两个或多个 SELECT 语句的结果集。
+
+请注意，UNION 内部的每个 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每个 SELECT 语句中的列的顺序必须相同。
+
+SQL UNION 语法
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+注释：默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。
+
